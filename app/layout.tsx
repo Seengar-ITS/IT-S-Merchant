@@ -29,7 +29,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <footer style={{ borderTop: '1px solid rgba(255,255,255,0.08)', padding: '24px', textAlign: 'center', color: 'rgba(255,255,255,0.4)', fontSize: 13, marginTop: 80 }}>
           IT-S Universe © 2026 — IT-S Merchant Portal
         </footer>
-      </body>
+      <script>if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('/sw.js').catch(()=>{}))}</script>
+</body>
     </html>
   )
 }
